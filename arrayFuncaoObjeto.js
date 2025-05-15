@@ -3,28 +3,15 @@ let num_B = 3.0;
 let num_C;
 
 const operacoes = ["adição", "subtração", "multiplicação", "divisão"];
-
 function imprimirResultado(operando1, operando2, operacao, resultado){
     console.log(`A ${operacao} entre ${operando1} e ${operando2} é igual a ${resultado}`);
 }
 
 num_C = num_A + num_B;
-//imprimirResultado(num_A, num_B, operacoes[0], num_C);
-
 num_C = num_A - num_B;
-//imprimirResultado(num_A, num_B, operacoes[1], num_C);
-
 num_C = num_A * num_B;
-//imprimirResultado(num_A, num_B, operacoes[2], num_C);
-
 num_C = num_A / num_B;
-//imprimirResultado(num_A, num_B, operacoes[3], num_C);
 
-/*
-    1 2 3
-    4 5 6
-    7 8 9
-*/
 let matriz = [
     [1, 2, 3], 
     [4, 5, 6], 
@@ -40,8 +27,6 @@ function imprimirMatriz(A){
     }
 }
 
-//imprimirMatriz(matriz);
-
 let capitais = {
     DF: "Brasília",
     DDD_DF: 61,
@@ -51,12 +36,8 @@ let capitais = {
     DDD_RJ: 21
 };
 
-//console.log(capitais.RJ + " - " + capitais.DDD_RJ);
-
 for(chave in capitais){
-    //console.log(chave + "="+ capitais[chave]);
 }
-
 function verificarParidade(n){
     if(n % 2 == 0){
         return true;
