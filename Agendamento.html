@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MedSistems</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Agendamento de Consulta</h1>
+    <form action="/" method="POST">
+
+      <!-- Dados do Paciente -->
+      <fieldset>
+        <legend>Dados do paciente</legend>
+
+        <label for="nome">Nome Paciente:</label>
+        <input type="text" id="nome" name="nome" required>
+
+         <label for="data_nascimento">Data de nascimento:</label>
+        <input type="date" id="data_nascimento" name="data_nascimento" required>
+
+<label for="nome">Sexo:</label>
+       <select name="sexo"><option value="masculino">selecionar</option><option value="masculino">Masculino</option>
+<option value="feminino">Feminino</option></select>
+
+		<label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" required>
+
+        <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" required>
+
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep" required>
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" required>
+      </fieldset>
+
+      <!-- Dados da Consulta -->
+      <fieldset>
+        <legend>Dados da consulta</legend>
+
+        <label for="clinicas">Clínicas e laboratorios:</label>
+       <select name="Clínicas">
+<option value="seleção">selecionar unidade</option>
+<option value="Edificio Neurosono">Hospital Neurosono</option>
+<option value="Neurosono Anchieta TAG">Neurosono Anchieta TAG</option>
+<option value="Clinica CED/Anchieta TAG">CED 1° anda alas (B,C e D)</option>
+<option value="NeuroCenter/Anchieta TAG"> NeuroCenter 1° anda, ala C, sala 101 </option>
+
+<option value="Laboratorio"> Laboratorio IMAGEM CNC 05, Loja 02</option>
+<option value=""> IMAGEM/Anchieta TAG 1° anda, ala C, sala 104</option>
+<option value=""> IMAGEM - 710 asa sul</option>
+</select>
+
+        <label for="especialidade">Especialidades:</label>
+        <select name="especialidade">
+<option value="seleção">selecionar especialidades</option>
+<option value="laboratorio">N/A</option>
+<option value="Angiologia">Angiologista - Dr° Edson Som </option>
+<option value="Clínica Médica">Clinico geral - Dr° Zenon Bariga </option>
+<option value="Ginecologia">Ginecologista - Dr° Furtado</option>
+<option value="Ortopedia">Ortopedista - Dra° Larissa</option>
+<option value="Cardiologia">Cardiologista - Dr° Rafael</option>
+<option value="Geriatria">Geriatra - Dra° Maria Antonieta</option>
+<option value="Dermatologia">Dermatologista - Dr° Epaminondas</option>
+<option value="Neurologia">Neurologista - Dra° Jane</option>
+<option value="Nefrologia">Nefrologista - Dr° Girafales</option>
+<option value="Nutrologia">Nutrologa - Dra°Larissa</option>
+<option value="Nutrição">Nutricionista - Dra° Cynthia</option>
+<option value="Psiquiatria">Psiquiatra - Dr° Karlile</option>
+<option value="Psicologia">Psicologa - Dra° </option>
+</select>
+
+<label for="Exame e procedimentos">Exame e procedimentos:</label>
+      <select name="Exame e procedimento">
+<option value="Exames">Exames Neurologicos</option>
+<option value="Neurologicos">EEG + Mapeamento</option>
+<option value="Neurologicos">Bera</option>
+<option value="Neurologicos">Veng</option>
+<option value="Neurologicos">P300</option>
+<option value="Neurologicos">Bera</option>
+<option value="Neurologicos">Bateria Neurologicos</option>
+</select>
+
+<select name="Exame e procedimento">
+<option value="Exames">Exames Cardioligicos</option>
+<option value="Neurologicos">MAPA & Holter 24h</option>
+<option value="Neurologicos">Ecocardiograma</option>
+<option value="Neurologicos">Ecocardio com Doppler</option>
+<option value="Neurologicos">Eletrocardiograma</option>
+<option value="Neurologicos">Bateria Cardioligicos</option>
+</select>
+
+<select name="Exame e procedimento">
+<option value="Exames">Ecografias</option>
+<option value="Ecografia">Us Abdome Total</option>
+<option value="Ecografia">Abdome Total + Pelve</option>
+<option value="Ecografia">Us Região Iguinal</option>
+<option value="Ecografia">Us Prostata</option>
+<option value="Ecografia">Us Tireoide</option>
+<option value="Ecografia">Us Tireoide com Doppler</option>
+<option value="Ecografia">Us Mamaria </option>
+<option value="Ecografia">Us Mamaria + axilar</option>
+<option value="Ecografia">Us Transvaginal</option>
+<option value="Ecografia">Us Aorta e Iliacas </option>
+<option value="Ecografia">Us Carótidas e Vertebrais</option>
+</select>
+
+        <label for="observacao">Observação:</label>
+        <textarea id="observacao" name="observacao" rows="4"></textarea>
+
+        <label for="data_hora">Data e hora do agendamento:</label>
+        <input type="datetime-local" id="data_hora" name="data_hora" required>
+      </fieldset>
+
+      <button type="submit">Agendar Consulta</button>
+    </form>
+  </div>
+</body>
+</html>
